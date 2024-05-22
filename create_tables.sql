@@ -1,6 +1,5 @@
 CREATE SEQUENCE IF NOT EXISTS user_id_seq START WITH 1 INCREMENT BY 1 CACHE 10;
 CREATE SEQUENCE IF NOT EXISTS doc_id_seq START WITH 1 INCREMENT BY 1 CACHE 10;
-CREATE TYPE  cal_permissions AS  ENUM ('R', 'RW');
 
 CREATE TABLE IF NOT EXISTS users (
     id BIGINT NOT NULL DEFAULT nextval('user_id_seq'),
@@ -25,8 +24,9 @@ CREATE TABLE IF NOT EXISTS ca_lists (
     user_id BIGINT NOT NULL,
     doc_id BIGINT NOT NULL,
     doc_name VARCHAR(30) NOT NULL,
-    permissions cal_permissions NOT NULL, 
+    permissions VARCHAR(2) NOT NULL,
     PRIMARY KEY(user_id, doc_id),
+    CONSTRAINT check_permissions CHECK (role='R' OR role='RW'),
     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id),
     CONSTRAINT fk_doc FOREIGN KEY (doc_id) REFERENCES documents(id)
 );
