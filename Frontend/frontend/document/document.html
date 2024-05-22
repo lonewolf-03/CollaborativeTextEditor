@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet"  href="document.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"> Docs</div>
+        <div id="menu">
+            <ul>
+                <li>Save</li>
+                <li>Exit</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </div>
+    <div id="toolbar">
+        <div id="font-family">
+            <select>
+                <option>Arial</option>
+                <option>Calibri</option>
+            </select>
+        </div>
+        <div id="font-size">
+            <select>
+                <option>10</option>
+                <option>12</option>
+                <option>14</option>
+                <option>16</option>
+                <option>18</option>
+                <option>20</option>
+
+            </select>
+        </div>
+        <div id="text-align">
+            <button>Left</button>
+            <button>Center</button>
+            <button>Right</button>
+        </div>
+        <div id="bold-italic">
+            <button>Bold</button>
+            <button>Italic</button>
+        </div>
+        <div id="undo-redo">
+            <button>Undo</button>
+            <button>Redo</button>
+        </div>
+    </div>
+    <div id="document">
+        <div id="document-header">
+            <input type="text" id="document-title" placeholder="Untitled document">
+        </div>
+        <div id="document-body" contenteditable="true">
+
+        </div>
+    </div>
+    <div id="footer">
+        <div id="word-count">Word count: 0</div>
+    </div>
+        <script src="document.js"></script>
+</body>
+
+</html>

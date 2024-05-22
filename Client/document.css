@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#header li {
+        cursor: pointer;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#menu li {
+    margin-right: 20px;
+}
+
+#toolbar {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toolbar>div {
+    margin-right: 20px;
+}
+
+#font-family,
+#font-size {
+    width: 100px;
+}
+
+#text-align button,
+#bold-italic button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#undo-redo button {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#document {
+    flex: 1;
+    padding: 10px;
+    overflow: auto;
+}
+
+#document-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#document-title {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+}
+
+#document-body {
+    padding: 20px;
+    font-size: 14px;
+}
+
+#footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#word-count {
+    font-size: 12px;
+    color: #666;
+}

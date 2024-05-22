@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documents</title>
+    <link rel="stylesheet" href="Styling.css">
+</head>
+<body>
+    <header>
+        <h1>My Docs</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="document-info-Titles">
+                <span class="document-nameT">Document Name</span>
+                <span class="document-ownerT">Owned by </span>
+                <span class="document-dateT">Document Date</span>
+                <span class="optionsTitle">Options</span>
+            </div>
+            <ul id="document-list"></ul>
+            <button id="create-document-btn">Create New Document</button>
+            <div id="create-document-modal" class="modal">
+                <input id="document-name-input" type="text" placeholder="Enter document name">
+                <button id="create-document-submit-btn">Create Document</button>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <script src="JS.js"></script>
+</body>
+</html>
